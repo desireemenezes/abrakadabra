@@ -1,0 +1,109 @@
+/* ----------------------------------------------- */
+/* Configurações Básicas */
+/* ----------------------------------------------- */
+
+/* Aplica seletores quando a tela tiver no maximo 9100px de largura */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+    /* queremos ocupar a mesma largura do header */
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row {
+        padding: 0 2%;  
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 16px;
+    }
+    section {
+        padding: 50px 0;
+    }
+    ion-icon {
+        font-size: 265%;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .icon-small  {
+        width: 20px;
+        margin-right: 5px;
+    }
+    .city-feature {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    html {
+        font-size: 15px;
+    }
+    section {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .hero-text-box {
+    /* queremos ocupar a mesma largura do header */
+        width: 100%;
+        padding: 0 4%;
+    }
+    .main-nav {
+        float: left;
+        margin-top: 12px;
+    }
+    .main-nav li {
+        display: block;
+        line-height: 30px;
+    }
+    .mobile-nav-icon {
+        display: block;
+    }
+    .span-1-of-4 {
+        width: 48%;
+    }
+}
+/** dispositivos móveis */
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+    h1 {
+        font-size: 170%;
+    }
+    h2 {
+        font-size: 147%;
+    }
+    ion-icon {
+        left: 20px;
+        width: 100%;
+    }
+    .step div  {
+        height: 50px;
+        width: 50px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 8px 10px !important;
+    }
+    /* cada coluna ocupa uma imagem */
+    .span-1-of-4 {
+        width: 98%;
+    }
+    .col {
+        text-align: center;
+    }
+    .steps-box:first-child  {
+        padding-right: 40%;
+    }
+}

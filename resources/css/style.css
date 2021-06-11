@@ -1,0 +1,449 @@
+/* ----------------------------------------------- */
+/* Configurações Básicas  Desirée Mnezes */
+/* ----------------------------------------------- */
+
+/*Zerando bordas para ter maior domínio sobre os box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Element **/
+
+html {
+    background-color: #fff; /*Define a cor do fundo*/
+    color: #555;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 300; /*de acordo com a fonte que importamos*/
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transparências*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 370%;
+    letter-spacing: 20px;
+    word-spacing: 4px;
+}
+
+p {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: -webkit-center;
+}
+
+ion-icon {
+    font-size: 300%; /*Tamanho do ícone*/
+    display: block;
+    color: #fff; /*cor da fonte = cor do ícone*/
+    margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
+    font-weight: 300;
+}
+
+cite {
+    font-size: 95%;
+    margin-top: 25px;
+    display: block;
+    letter-spacing: 1px;
+
+}
+
+cite img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+
+footer {
+    background-color: #272727;
+    padding: 15px;
+    font-size: 80%;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/** class **/ 
+
+.center {
+    max-width: 1140px; /*Define o tamanho máximo da linha*/
+    margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+}
+
+.text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+.subtitle {
+    color: #ddd;
+    text-align: center;
+    font-size: 160%;
+    letter-spacing: 4px;
+}
+
+.open-menu {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.flex-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    margin: 20px;
+}
+
+/* ----------------------------------------------- */
+/* Seção Testemunhos (Section Testimonials) */
+/* ----------------------------------------------- */
+/*Adicionando imagem de fundo na seção*/
+.section-testimonials {
+    /*background-image: url(img/background-customers.jpg);*/
+    background-color: #272727;
+    background-size: cover; /*preencher toda a largura da janela do navegador*/
+    color: #fff; /*cor da fonte*/
+    background-attachment: fixed;
+}
+
+
+/* estilizando a div orverlay */
+.overlay {
+ height: 100vh; /* deixando o overlay 100% na vertical */
+ width: 0;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background-color: rgba(0,0,0,.7);
+ opacity: 0; /*iniciando opacidade em 0 */
+ transition: opacity 1s;
+}
+
+/* estilizando o botão abrir menu */
+.menu-open{
+ background: #900;
+ color: #fff;
+ font-size: 20px;
+ text-decoration: none;
+ padding: 10px 20px;
+ margin: 20px;
+ display: inline-block;
+ text-transform: uppercase;
+}
+
+/* estilizando o botão fechar menu */
+.menu a.menu-close {
+ padding: 8px 0 4px 23px;
+ color: #6B6B6B;
+ display: block;
+ margin: -30px 0 -10px -20px;
+ font-size: 35px;
+ text-decoration: none;
+}
+
+/* estilizando o menu em si */
+.menu {
+ overflow: hidden;
+ background: rgba(0,0,0,.95);
+ padding: 40px 0 0 40px;
+ position: fixed;
+ top: 0;
+ right: -200%; /*iniciando o menu com menos 290px para fora do browser*/
+ height: 100%;
+ z-index: 2;
+ transition: 0.5s;
+ width: 28%;
+}
+
+/* estilizando o menu + ul */
+.menu ul{
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ overflow-y: auto;
+ height: 95%;
+}
+
+/* estilizando o menu + ul li + a */
+.menu ul li a {
+ display: block;
+ border-bottom: 1px solid #131313;
+ padding: 6px 4px 6px 4px;
+ color: #fff;
+ transition: 0.3s;
+ text-decoration: none;
+ font-size: 140%;
+ letter-spacing: 2px;
+ 
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.images-showcase {
+    list-style: none; /*Retira marcadores*/
+    width: 100%; /*Ocupa toda largura da tela*/
+}
+
+.images-showcase li{
+    display: block; /*permite outros elementos ao lado*/
+    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
+    width: 25%; /*cada item/imagem terá 25% de largura em relação a tela... 100/4*/
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /*Cor de fundo - preto*/
+}
+
+.photo img {
+    opacity: 0.7; /*deixa a imagem um pouco transparente*/
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s, opacity 0.5s; /*Adiciona um período de transição quando houver alteração na propriedade transform ou opacity*/
+}
+
+.photo img:hover {
+    opacity:1;
+    transform: scale(1.03); /*escala da imagem com valor padrão*/
+}
+
+
+.section-photos {
+    padding: 0;
+}
+
+/* ----------------------------------------------- */
+/* Seção Lista de Passos (Section Steps) */
+/* ----------------------------------------------- */
+
+.steps-box:first-child {
+    margin-top: 30px;
+    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
+    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%; /*40% do tamanho do box/container*/
+}
+
+.step {
+    margin-bottom: 50px;
+}
+
+/*Aumentanto apenas o espaçamento do ultimo passo, igual ao last-child*/
+.step:last-of-type {
+    margin-bottom: 80px;
+}
+
+/*Vamos criar uma regra para o elemento div dentro da classe step*/
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+    /*posterior*/
+    border-radius: 50%; /*Arredonda as bordas*/
+    height: 55px;/*Define altura*/
+    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+    /*Ajustando o texto interno*/
+    text-align: center;/*Texto centralizado na horizontal, não na vertical*/
+    padding: 5px;/*espaço entre texto e borda do container*/
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+}
+
+/*A última coisa é formatar o tamanho dos botões... a imagem dentro do botão*/
+.btn-app img {
+    height:50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.clearfix {
+zoom:1;
+}
+
+.clearfix:after {
+    content: '-';
+    clear: both;
+    display: block;
+    height:0;
+    visibility:hidden;
+}
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+/* ----------------------------------------------- */
+/* Seção Cidades (Section Cities) */
+/* ----------------------------------------------- */
+
+/*Vamos começar pelas imagens*/
+.box img {
+    width: 100%; /*100% a largura do container*/
+    height: auto; /*ajusta o valor da altura de acordo com a largura (width)*/
+    margin-bottom: 15px; /*dá um espaçamento entre a imagem e o nome da cidade*/
+}
+
+
+.city-feature {
+    margin-bottom: 5px; /*dá um espaçamento vertical entre cada feature*/
+}
+
+/*Quero que eles fiquem alinhados*/
+.icon-small {
+    display: inline-block; /*Permite definir with*/
+    width: 30px; /**/
+    text-align: center; /*Centraliza o icone dentro desse inline-block com 30px de largura*/
+    color: #e67e22; /*Define a cor do icone*/
+    font-size: 120%; /*Define tamanho do ícone*/
+    margin-right: 10px; /*Coloca um espaçamento entre o ícone e o texto*/
+    /*Alinhando icones com o texto - horizontal*/
+    /*Segredo para alinhar texto e ícones são as 3 linhas aseguir*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+/*Formatando o link*/
+a:link, a:visited {
+    color: #e67e22; /*Define a cor da fonte do link*/
+    text-decoration: none;
+    padding-bottom: 1px; /*Adiciona um espacinho entre o texto do link e a borda de baixo*/
+    border-bottom: 1px solid #e67e22; /*Adiciona uma borda colorida abaixo do link*/
+    /*Por último, Vamos Adicionar uma transição para aparecer a borda e para ela ser colorida*/
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover, a:active {
+    color: #e67e22; /*Define a cor da fonte do link*/
+    text-decoration: none;
+    padding-bottom: 1px; /*Adiciona um espacinho entre o texto do link e a borda de baixo*/
+    border-bottom: 1px solid transparent; /*Adiciona uma borda transparente abaixo do link*/
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0px;
+}
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 50%;
+}
+
+.logo-facebook,
+.logo-googleplus,
+.logo-twitter,
+.logo-instagram {
+    transition: color 0.2s;
+}
+
+.logo-linkedin {
+    color: #888;
+}
+
+.logo-octocat {
+    color: #888;
+}
+
+.logo-linkedin:hover {
+    color: #ddd;
+}
+
+.logo-octocat:hover {
+    color: #ddd;
+}
+

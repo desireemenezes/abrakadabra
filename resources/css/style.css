@@ -31,7 +31,7 @@ header {
 }
 
 h1, h2, h3 {
-    font-weight: 300;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -109,11 +109,13 @@ footer p {
     text-align: center;
     font-size: 160%;
     letter-spacing: 4px;
+    font-weight: 600;
 }
 
 .open-menu {
     margin-top: 20px;
     cursor: pointer;
+    display: none;
 }
 
 .flex-column {
@@ -125,6 +127,46 @@ footer p {
 
 .box {
     margin: 20px;
+}
+/* estilizando o menu em si */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 445px;
+}
+.menu .menu-close {
+    display: none;
+}
+
+
+/* estilizando o menu + ul */
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    height: 95%;
+}
+
+/* estilizando o menu + ul li + a */
+.menu ul li a {
+    display: block;
+    padding: 6px 4px 6px 4px;
+    color: #aaa;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 140%;
+    letter-spacing: 2px;
+}
+.menu ul li a:hover {
+    color: #fff;
+    transition: 0.3s;
+  
 }
 
 /* ----------------------------------------------- */
@@ -142,72 +184,14 @@ footer p {
 
 /* estilizando a div orverlay */
 .overlay {
- height: 100vh; /* deixando o overlay 100% na vertical */
- width: 0;
- position: fixed;
- top: 0;
- left: 0;
- background-color: rgba(0,0,0,.7);
- opacity: 0; /*iniciando opacidade em 0 */
- transition: opacity 1s;
-}
-
-/* estilizando o botão abrir menu */
-.menu-open{
- background: #900;
- color: #fff;
- font-size: 20px;
- text-decoration: none;
- padding: 10px 20px;
- margin: 20px;
- display: inline-block;
- text-transform: uppercase;
-}
-
-/* estilizando o botão fechar menu */
-.menu a.menu-close {
- padding: 8px 0 4px 23px;
- color: #6B6B6B;
- display: block;
- margin: -30px 0 -10px -20px;
- font-size: 35px;
- text-decoration: none;
-}
-
-/* estilizando o menu em si */
-.menu {
- overflow: hidden;
- background: rgba(0,0,0,.95);
- padding: 40px 0 0 40px;
- position: fixed;
- top: 0;
- right: -200%; /*iniciando o menu com menos 290px para fora do browser*/
- height: 100%;
- z-index: 2;
- transition: 0.5s;
- width: 28%;
-}
-
-/* estilizando o menu + ul */
-.menu ul{
- list-style: none;
- padding: 0;
- margin: 0;
- overflow-y: auto;
- height: 95%;
-}
-
-/* estilizando o menu + ul li + a */
-.menu ul li a {
- display: block;
- border-bottom: 1px solid #131313;
- padding: 6px 4px 6px 4px;
- color: #fff;
- transition: 0.3s;
- text-decoration: none;
- font-size: 140%;
- letter-spacing: 2px;
- 
+    height: 100vh; /* deixando o overlay 100% na vertical */
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0; /*iniciando opacidade em 0 */
+    transition: opacity 1s;
 }
 
 .section-features .long-copy {
@@ -279,22 +263,6 @@ footer p {
     margin-bottom: 80px;
 }
 
-/*Vamos criar uma regra para o elemento div dentro da classe step*/
-.step div {
-    color: #e67e22; /*Define cor da fonte*/
-    border: 2px solid #e67e22; /*define uma borda laranja*/
-    display: inline-block;/*para permitir containers lado a lado*/
-    /*posterior*/
-    border-radius: 50%; /*Arredonda as bordas*/
-    height: 55px;/*Define altura*/
-    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
-    /*Ajustando o texto interno*/
-    text-align: center;/*Texto centralizado na horizontal, não na vertical*/
-    padding: 5px;/*espaço entre texto e borda do container*/
-    float: left;
-    font-size: 150%;
-    margin-right: 25px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
-}
 
 /*A última coisa é formatar o tamanho dos botões... a imagem dentro do botão*/
 .btn-app img {
@@ -304,7 +272,7 @@ footer p {
 }
 
 .clearfix {
-zoom:1;
+    zoom:1;
 }
 
 .clearfix:after {
@@ -333,38 +301,6 @@ zoom:1;
 
 .city-feature {
     margin-bottom: 5px; /*dá um espaçamento vertical entre cada feature*/
-}
-
-/*Quero que eles fiquem alinhados*/
-.icon-small {
-    display: inline-block; /*Permite definir with*/
-    width: 30px; /**/
-    text-align: center; /*Centraliza o icone dentro desse inline-block com 30px de largura*/
-    color: #e67e22; /*Define a cor do icone*/
-    font-size: 120%; /*Define tamanho do ícone*/
-    margin-right: 10px; /*Coloca um espaçamento entre o ícone e o texto*/
-    /*Alinhando icones com o texto - horizontal*/
-    /*Segredo para alinhar texto e ícones são as 3 linhas aseguir*/
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -4px;
-}
-
-/*Formatando o link*/
-a:link, a:visited {
-    color: #e67e22; /*Define a cor da fonte do link*/
-    text-decoration: none;
-    padding-bottom: 1px; /*Adiciona um espacinho entre o texto do link e a borda de baixo*/
-    border-bottom: 1px solid #e67e22; /*Adiciona uma borda colorida abaixo do link*/
-    /*Por último, Vamos Adicionar uma transição para aparecer a borda e para ela ser colorida*/
-    transition: border-bottom 0.2s, color 0.2s;
-}
-
-a:hover, a:active {
-    color: #e67e22; /*Define a cor da fonte do link*/
-    text-decoration: none;
-    padding-bottom: 1px; /*Adiciona um espacinho entre o texto do link e a borda de baixo*/
-    border-bottom: 1px solid transparent; /*Adiciona uma borda transparente abaixo do link*/
 }
 
 .btn-app:link,

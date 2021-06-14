@@ -2,7 +2,7 @@
 /** No jQuery, vamos mudar a propriedade CSS do menu usando jQuery, já que habilitamos a transição de CSS, ele deve cuidar da animação deslizante sem o animation do jQuery. **/
 $(document).ready(function(){
     $(function () {
-        var menu_width = 500;
+        var menu_width = 1024;
         var menu = $(".menu");
         var menu_open = $(".open-menu");
         var menu_close = $(".menu-close");

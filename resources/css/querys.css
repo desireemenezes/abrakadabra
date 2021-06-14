@@ -76,6 +76,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .menu ul li a {
+        font-size: 200%;
+    }
     .subtitle {
         font-size: 120%;
     }

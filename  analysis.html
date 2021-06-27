@@ -24,7 +24,7 @@
     <script src=""></script>
     <title>Abrakadabra</title>
 </head>
-<body> 
+<body>
     
     <header class="fl-between">
         <div>
@@ -32,7 +32,6 @@
         </div> 
          <div >
              <ul class="flex-row">
-                 <li><a href="analysis.html">An�lise especializada</a></li>
                  <li><a href="index.html">Curiosidades</a></li>
              </ul>
          </div>
@@ -42,47 +41,36 @@
     <nav class="section-features">
         <div class="text-box center">
             <h1>ABRAKADABRA</h1><br />
-            <p class="subtitle">Vire uma carta para descobrir como vai ser sua semana!</p>
-            <ion-icon name="arrow-forward-sharp" class="open-menu"></ion-icon>
         </div>
     </nav>
 
-    <section class="section-menu-cards">
-        <div class="center flex-row">
-            <div class="card">
-                <div class="box front">
-                    <img src="resources/img/abra.png" />
-                </div>
-                <div class="box back">
-                    conteudo
-                </div>
+    
+    <section class="section-menu-forms" >
+         <form name="meu_form">
+
+            <p class="subtitle">Envie seu contato para uma análise especializada</p>
+            
+            <div class="body-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
+
+                <label for="nome">Data de nascimento</label>
+                <input type="date" id="dataid" required="required" name="data" />
+
+                <label for="fone">Fone</label>
+                <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" required="required" name="fone" />
+                
+                <label for="email">Email</label>
+                <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required="required" />
+                
+                <textarea placeholder="Faça uma pergunta especifica!" required="required"></textarea>
+                
+                <input type="submit" class="submit" value="Enviar" />
             </div>
-            <div class="card">
-                <div class="box front">
-                    <img class="flip" src="resources/img/abra.png" />
-                </div>
-                <div class="back">
-                    <p class="unflip">conteudo</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box front">
-                    <img src="resources/img/abra.png" />
-                </div>
-                <div class="box back">
-                   conteudo
-                </div>
-            </div>
-            <div class="card">
-                <div class="box front">
-                    <img src="resources/img/abra.png" />
-                </div>
-                <div class="box back">
-                    conteudo
-                </div>
-            </div>
-        </div>
+
+        </form>
     </section>
+
    
     <section class="section-testimonials" id="depoimentos">
         <div class="center flex-column">

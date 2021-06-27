@@ -1,6 +1,7 @@
 /** Seleciona o doc html, quando tiver carregado ativa a função */
 /** No jQuery, vamos mudar a propriedade CSS do menu usando jQuery, já que habilitamos a transição de CSS, ele deve cuidar da animação deslizante sem o animation do jQuery. **/
 $(document).ready(function(){
+
     $(function () {
         var menu_width = 1024;
         var menu = $(".menu");
@@ -19,6 +20,12 @@ $(document).ready(function(){
           menu.css({"right": "-" + menu_width + "px"});
           overlay.css({"opacity": "0", "width": "0"});
         });
-       });
-   
+      });   
+
+       //Efeito para virar os cards
+      $('.card').click(function(){
+        $(this).toggleClass('flipped');
+      });
 });
+
+

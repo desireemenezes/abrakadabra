@@ -10,7 +10,7 @@
     <!-- Importação do nossa folha de estilo -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
      <!-- Importação do nossa folha de querys -->
-     <link rel="stylesheet" type="text/css" href="resources/css/querys.css">
+     <link rel="stylesheet" type="text/css" href="resources/css/media.css">
     <!-- Importação dos icones -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://unpkg.com/ionicons@5.0.0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -23,24 +23,34 @@
     <!-- JS -->
     <script src=""></script>
     <title>Abrakadabra</title>
-</head>
+</head> 
 <body>
-    <header class="section-features">
-        <div class="text-box center">
-            <h1>ABRAKADABRA</h1><br />
-            <p class="subtitle">Descubra o seu futuro</p>
-            <ion-icon name="arrow-forward-sharp" class="open-menu"></ion-icon>
+
+    <header class="fl-between">
+       <!--  <div>
+            <a href="index.html">Voltar</a>
+        </div> -->
+        <div >
+            <ul class="flex-row">
+                <li><a href="analysis.html">Análise especializada</a></li>
+                <li><a href="index.html">Curiosidades</a></li>
+            </ul>
         </div>
+        
     </header>
 
-    <nav>
+    <nav class="section-features-index">
+        <div class="text-box center">
+            <h1>ABRAKADABRA</h1><br />
+            <p class="subtitle">Descubra o seu destino</p>
+            <ion-icon name="arrow-forward-sharp" class="open-menu"></ion-icon>
+        </div>
         <div class="overlay"></div>
         <div class="menu">
             <ul>
-                <li><a href="#" target="_blank">Como vai ser o sua semana?</a></li>
-                <li><a href="#" target="_blank">Como vai ser o seu mês?</a></li>
-                <li><a href="#" target="_blank">Como vai ser o seu ano?</a></li>
-                <li><a href="#" target="_blank">Como você vai morrer?</a></li>
+                <li><a href="week.html">Como vai ser o meu futuro?</a></li>
+                <li><a href="#" >Como eu vou morrer ?</a></li>
+                <li><a href="week.html">Um conselho para vida!</a></li>
                 <a href="#" ><ion-icon name="arrow-back-sharp" class="menu-close"></ion-icon></a>
             </ul>
         </div>

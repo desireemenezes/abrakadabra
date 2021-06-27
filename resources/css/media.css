@@ -15,20 +15,11 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    html {
-        font-size: 16px;
-    }
     section {
         padding: 50px 0;
     }
     ion-icon {
         font-size: 180%;
-    }
-    h1 {
-        font-size: 200%;
-    }
-    h2 {
-        font-size: 150%;
     }
     .long-copy {
         width: 80%;
@@ -41,6 +32,12 @@
     .city-feature {
         font-size: 90%;
     }
+    .flex-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 830px) {
@@ -48,15 +45,20 @@
         font-size: 15px;
     }
     header {
-        height: 70vh;
+        height: 30vh;
     }
     section {
         padding: 40px 0;
     }
+    input, textarea {
+        width: 85%;
+    }
+    .section-features-index {
+        height: 35vh;
+    }
     .open-menu {
         display: block;
     }
-    
     .menu {
         overflow: hidden;
         background: rgba(0,0,0,.95);
@@ -108,7 +110,7 @@
 /** dispositivos móveis */
 @media only screen and (max-width: 480px) {
     section {
-        padding: 25px 0;
+        padding: 20px !important;
     }
     h1 {
         font-size: 170%;

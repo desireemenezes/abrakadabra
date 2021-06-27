@@ -1,31 +1,31 @@
 /* ----------------------------------------------- */
-/* Configurações Básicas  Desirée Mnezes */
+/* ConfiguraÃ§Ãµeses BÃ¡sicas  DesirÃ©e Mnezes */
 /* ----------------------------------------------- */
 
-/*Zerando bordas para ter maior domínio sobre os box*/
+/*Zerando bordas para ter maior domÃ­nio sobre os box*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/** Element **/
+/** Elementos Html **/
 
 html {
     background-color: #fff; /*Define a cor do fundo*/
     color: #555;
     font-family: 'Shadows Into Light', cursive;
-    font-weight: 300; /*de acordo com a fonte que importamos*/
+    font-weight: 300; /* de acordo com a fonte que importamos */
     font-size: 20px;
-    text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/
+    text-rendering: optimizeLegibility; /*otimiza a renderizaÃ§Ã£oo da fonte para letura, tendo uma melhor qualidade */
     scroll-behavior: smooth;
 }
 
 header {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transparências*/
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /* explore outras cores e transparÃªncias */
     background-size: cover;
     background-position: center;
-    height: 100vh;
     background-attachment: fixed;
     
 }
@@ -39,7 +39,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 0px;
     color: #fff;
-    font-size: 370%;
+    font-size: 450%;
     letter-spacing: 20px;
     word-spacing: 4px;
 }
@@ -50,11 +50,33 @@ p {
     text-align: -webkit-center;
 }
 
+a:link,
+a:visited,
+a:link,
+a:visited {
+    text-decoration-line: underline;
+    border: 0;
+    color: #ddd;
+    transition: color 0.2s;
+    font-size: 150%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a:hover,
+a:active {
+    color: #888;
+}
+
+ul {
+    list-style-type: none;
+}
+
 ion-icon {
-    font-size: 300%; /*Tamanho do ícone*/
+    font-size: 300%; /*Tamanho do Ã­cone*/
     display: block;
-    color: #fff; /*cor da fonte = cor do ícone*/
-    margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
+    color: #fff; 
+    margin-bottom: 10px; 
     font-weight: 300;
 }
 
@@ -87,11 +109,17 @@ footer p {
 }
 
 
-/** class **/ 
+/** classes **/ 
+
+.fl-between {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
 
 .center {
-    max-width: 1140px; /*Define o tamanho máximo da linha*/
-    margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+    max-width: 1140px; /*Define o tamanho mÃ¡ximo da linha*/
+    margin: 0 auto 0 auto; /*D efine que o container vai ficar centralizado */
 }
 
 .text-box {
@@ -104,10 +132,11 @@ footer p {
     align-items: center;
     transform: translate(-50%, -50%);
 }
+
 .subtitle {
     color: #ddd;
     text-align: center;
-    font-size: 160%;
+    font-size: 200%;
     letter-spacing: 4px;
     font-weight: 600;
 }
@@ -125,9 +154,17 @@ footer p {
     align-items: center;
 }
 
+.flex-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
 .box {
     margin: 20px;
 }
+
 /* estilizando o menu em si */
 .menu {
     display: flex;
@@ -137,19 +174,18 @@ footer p {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 445px;
+    top: 390px;
 }
+
 .menu .menu-close {
     display: none;
 }
-
 
 /* estilizando o menu + ul */
 .menu ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    overflow-y: auto;
     height: 95%;
 }
 
@@ -160,9 +196,10 @@ footer p {
     color: #aaa;
     transition: 0.3s;
     text-decoration: none;
-    font-size: 140%;
+    font-size: 150%;
     letter-spacing: 2px;
 }
+
 .menu ul li a:hover {
     color: #fff;
     transition: 0.3s;
@@ -170,105 +207,60 @@ footer p {
 }
 
 /* ----------------------------------------------- */
-/* Seção Testemunhos (Section Testimonials) */
+/* SessÃµes */
 /* ----------------------------------------------- */
-/*Adicionando imagem de fundo na seção*/
+/*Adicionando imagem de fundo na sessÃ£oo*/
+
 .section-testimonials {
-    /*background-image: url(img/background-customers.jpg);*/
     background-color: #272727;
     background-size: cover; /*preencher toda a largura da janela do navegador*/
     color: #fff; /*cor da fonte*/
     background-attachment: fixed;
+    padding: 10px;
 }
 
-
-/* estilizando a div orverlay */
-.overlay {
-    height: 100vh; /* deixando o overlay 100% na vertical */
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.7);
-    opacity: 0; /*iniciando opacidade em 0 */
-    transition: opacity 1s;
+.section-features-index {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transparï¿½ncias*/
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-attachment: fixed;
 }
 
 .section-features .long-copy {
     margin-bottom: 30px;
 }
 
-.images-showcase {
-    list-style: none; /*Retira marcadores*/
-    width: 100%; /*Ocupa toda largura da tela*/
+.section-photos {
+    padding: 0;
 }
 
-.images-showcase li{
-    display: block; /*permite outros elementos ao lado*/
-    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
-    width: 25%; /*cada item/imagem terá 25% de largura em relação a tela... 100/4*/
+.section-steps {
+    background-color: #f4f4f4;
 }
+
+/* ----------------------------------------------- */
+/* Fotos */
+/* ----------------------------------------------- */
 
 .photo {
     width: 100%;
     margin: 0;
     overflow: hidden;
-    background-color: #000; /*Cor de fundo - preto*/
+    background-color: #000; 
 }
 
 .photo img {
-    opacity: 0.7; /*deixa a imagem um pouco transparente*/
+    opacity: 0.7; 
     width: 100%;
-    height: auto; /*para não desfigurar a imagem*/
-    transform: scale(1.15); /*imagem aumentada em 15%*/
-    transition: transform 0.5s, opacity 0.5s; /*Adiciona um período de transição quando houver alteração na propriedade transform ou opacity*/
+    height: auto; 
+    transform: scale(1.15); 
+    transition: transform 0.5s, opacity 0.5s; 
 }
 
 .photo img:hover {
     opacity:1;
-    transform: scale(1.03); /*escala da imagem com valor padrão*/
-}
-
-
-.section-photos {
-    padding: 0;
-}
-
-/* ----------------------------------------------- */
-/* Seção Lista de Passos (Section Steps) */
-/* ----------------------------------------------- */
-
-.steps-box:first-child {
-    margin-top: 30px;
-    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
-    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
-}
-
-.steps-box:last-child {
-    text-align: left;
-    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
-    margin-top: 70px;
-}
-
-.app-screen {
-    width: 40%; /*40% do tamanho do box/container*/
-}
-
-.step {
-    margin-bottom: 50px;
-}
-
-/*Aumentanto apenas o espaçamento do ultimo passo, igual ao last-child*/
-.step:last-of-type {
-    margin-bottom: 80px;
-}
-
-
-/*A última coisa é formatar o tamanho dos botões... a imagem dentro do botão*/
-.btn-app img {
-    height:50px;
-    width: auto;
-    margin-right: 10px;
+    transform: scale(1.03); /*escala da imagem com valor padrÃ£oo*/
 }
 
 .clearfix {
@@ -283,41 +275,20 @@ footer p {
     visibility:hidden;
 }
 
-.section-steps {
-    background-color: #f4f4f4;
-}
-
-/* ----------------------------------------------- */
-/* Seção Cidades (Section Cities) */
-/* ----------------------------------------------- */
-
-/*Vamos começar pelas imagens*/
 .box img {
-    width: 100%; /*100% a largura do container*/
-    height: auto; /*ajusta o valor da altura de acordo com a largura (width)*/
-    margin-bottom: 15px; /*dá um espaçamento entre a imagem e o nome da cidade*/
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 15px; 
 }
-
 
 .city-feature {
-    margin-bottom: 5px; /*dá um espaçamento vertical entre cada feature*/
+    margin-bottom: 5px; 
 }
-
-.btn-app:link,
-.btn-app:visited {
-    border: 0px;
-}
-
-
-
-
 
 
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
-
-
 
 .footer-nav {
     list-style: none;
@@ -340,31 +311,9 @@ footer p {
     margin-right: 0;
 }
 
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.social-links li a:link,
-.social-links li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #888;
-    transition: color 0.2s;
-}
-
-.footer-nav li a:hover,
-.footer-nav li a:active {
-    color: #ddd;
-}
-
 .social-links li a:link,
 .social-links li a:visited {
     font-size: 50%;
-}
-
-.logo-facebook,
-.logo-googleplus,
-.logo-twitter,
-.logo-instagram {
-    transition: color 0.2s;
 }
 
 .logo-linkedin {
@@ -382,4 +331,17 @@ footer p {
 .logo-octocat:hover {
     color: #ddd;
 }
+
+
+/* estilizando a div orverlay */
+/* .overlay {
+    height: 100vh; 
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    transition: opacity 1s;
+} 
 

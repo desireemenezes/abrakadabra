@@ -23,9 +23,23 @@ $(document).ready(function(){
       });   
 
        //Efeito para virar os cards
-      $('.card').click(function(){
-        $(this).toggleClass('flipped');
+    
+      $(".card-grid").flip({
+        trigger: "manual"
+      });
+      
+      $(".flip").click(function() {
+        $(this)
+          .closest(".card-grid")
+          .flip(true);
+      });
+      
+      $(".unflip").click(function() {
+        $(this)
+          .closest(".card-grid")
+          .flip(false);
       });
 });
+
 
 

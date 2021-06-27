@@ -15,23 +15,37 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    section {
-        padding: 50px 0;
-    }
+
     ion-icon {
-        font-size: 180%;
+        font-size: 230% ;
     }
+
+    .menu ion-icon  {
+        font-size: 170% !important;
+    }
+
+    .section-menu-cards {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        background-attachment: fixed;
+    }
+
     .long-copy {
         width: 80%;
         margin-left: 10%;
     }
+
     .icon-small  {
         width: 20px;
         margin-right: 5px;
     }
+
     .city-feature {
         font-size: 90%;
     }
+
     .flex-row {
         display: flex;
         justify-content: center;
@@ -44,43 +58,72 @@
     html {
         font-size: 15px;
     }
+
     header {
-        height: 30vh;
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
+        height: 25vh;
+        background-size: cover;
+        background-attachment: fixed;
     }
+
     section {
         padding: 40px 0;
     }
+
     input, textarea {
         width: 85%;
     }
+
+    /** sections query **/
+
     .section-features-index {
         height: 35vh;
     }
+
+    .section-features {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+    }
+
+    .section-menu-cards {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg);
+        background-size: cover;
+        height: auto;
+        background-attachment: fixed;
+    }
+
+    /** menu querys */ 
     .open-menu {
         display: block;
     }
+
     .menu {
         overflow: hidden;
-        background: rgba(0,0,0,.95);
+        background: #000;
         position: fixed;
-        top: 0;
         right: -200%; /*iniciando o menu com menos 290px para fora do browser*/
         height: 100%;
         z-index: 2;
         transition: 0.5s;
         width: 100%;
     }
+
     .menu .menu-close {
         display: block;
     }
+
     .menu ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .menu ul li a {
         font-size: 200%;
     }
+
     .subtitle {
         font-size: 120%;
     }
@@ -92,17 +135,21 @@
         width: 100%;
         padding: 0 4%;
     }
+
     .main-nav {
         float: left;
         margin-top: 12px;
     }
+
     .main-nav li {
         display: block;
+       
         line-height: 30px;
     }
     .mobile-nav-icon {
         display: block;
     }
+
     .span-1-of-4 {
         width: 48%;
     }
@@ -112,28 +159,58 @@
     section {
         padding: 20px !important;
     }
+
     h1 {
-        font-size: 170%;
+        font-size: 165%;
     }
+
     h2 {
         font-size: 147%;
     }
-    .step div  {
-        height: 50px;
-        width: 50px;
+
+    a {
+        font-size: 125% !important;
     }
-    .btn {
-        display: inline-block;
-        padding: 8px 10px !important;
+
+    header {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
+        height: 30vh;
+        background-size: cover;
+        background-position: unset;
+        background-attachment: fixed;
     }
-    /* cada coluna ocupa uma imagem */
-    .span-1-of-4 {
-        width: 98%;
+
+     /** sections query **/
+
+    .section-features-index {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
+        background-size: cover;
+        background-position: unset;
+        background-attachment: fixed;
+        height: 25vh;
     }
-    .col {
-        text-align: center;
+
+    .section-features {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
+        background-size: cover;
+        background-position: unset;
+        background-attachment: fixed;
+        height: auto;
     }
-    .steps-box:first-child  {
-        padding-right: 40%;
-    }
+
+    .section-menu-cards {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg);
+        background-size: cover;
+        background-position: unset;
+        height: auto;
+        background-attachment: fixed;
+    } 
+
+    .section-menu-forms {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg);
+        background-size: cover;
+        background-position: unset;
+        height: auto;
+        background-attachment: fixed;
+    } 
 }

@@ -3,6 +3,7 @@
 /* ----------------------------------------------- */
 
 /*Zerando bordas para ter maior domínio sobre os box*/
+
 * {
     margin: 0;
     padding: 0;
@@ -208,46 +209,33 @@ footer p {
     position: absolute;
     top: 445px;
 }
+
 .menu .menu-close {
     display: none;
 }
 
 
-/* estilizando o menu + ul */
-.menu ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow-y: auto;
-    height: 95%;
-}
-
-/* estilizando o menu + ul li + a */
-.menu ul li a {
-    display: block;
-    padding: 6px 4px 6px 4px;
-    color: #aaa;
-    transition: 0.3s;
-    text-decoration: none;
-    font-size: 140%;
-    letter-spacing: 2px;
-}
-.menu ul li a:hover {
-    color: #fff;
-    transition: 0.3s;
-  
-}
-
 /* ----------------------------------------------- */
-/* Seção Testemunhos (Section Testimonials) */
+/* Sesso?s */
 /* ----------------------------------------------- */
-/*Adicionando imagem de fundo na seção*/
+
 .section-testimonials {
-    /*background-image: url(img/background-customers.jpg);*/
     background-color: #272727;
     background-size: cover; /*preencher toda a largura da janela do navegador*/
     color: #fff; /*cor da fonte*/
     background-attachment: fixed;
+}
+
+.section-features {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    background-attachment: fixed;
+}
+
+.section-photos {
+    padding: 0;
 }
 
 .section-menu-cards {
@@ -268,44 +256,19 @@ footer p {
     background-attachment: fixed;
 }
 
-.card {
+/** CARDS EFEITOS */
+
+.card-grid {
     font-size: 95%;
     margin-top: 25px;
     display: block;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 23.8%;
-     
-    /* Set the transition effects */
-    -webkit-transition: -webkit-transform 0.4s;
-    -moz-transition: -moz-transform 0.4s;
-    -o-transition: -o-transform 0.4s;
-    transition: transform 0.4s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.card .front,
-.card .back {
-    display: block;
-    height: 100%;
-    line-height: 260px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
+    margin: 10px;
+   
 }
 
-/* efeito card dispara no js*/
-.card.flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-}
-
-.card .front img {
+.card-grid .front img {
     display: block; 
     border-radius: 10px;
     opacity: 0.7; /*deixa a imagem um pouco transparente*/
@@ -315,35 +278,21 @@ footer p {
     transition: transform 0.3s, opacity 0.3s; /*Adiciona um período de transição quando houver alteração na propriedade transform ou opacity*/
 
 }
-
-.card img:hover {
+.card-grid img:hover {
     opacity:1;
     transform: scale(1.03); /*escala da imagem com valor padrão*/
 }
-.card .back {
+
+.card-grid .back {
     display: block; 
     border-radius: 10px;
     opacity: 0.7; /*deixa a imagem um pouco transparente*/
-    width: auto;
-    height: 411px !important;
+    width: 228px !important;
+    height: 405px !important;
+    background: #FFF;
     height: auto; /*para não desfigurar a imagem*/
     transform: scale(1.0); /*imagem aumentada em 15%*/
     transition: transform 0.3s, opacity 0.3s; /*Adiciona um período de transição quando houver alteração na propriedade transform ou opacity*/
-}
-.card .back {
-    background: #FFF;
-    transform: rotateY( 180deg );
-}
-
-.images-showcase {
-    list-style: none; /*Retira marcadores*/
-    width: 100%; /*Ocupa toda largura da tela*/
-}
-
-.images-showcase li{
-    display: block; /*permite outros elementos ao lado*/
-    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
-    width: 25%; /*cada item/imagem terá 25% de largura em relação a tela... 100/4*/
 }
 
 .photo {
@@ -367,72 +316,6 @@ footer p {
 }
 
 
-.section-photos {
-    padding: 0;
-}
-
-/* ----------------------------------------------- */
-/* Seção Lista de Passos (Section Steps) */
-/* ----------------------------------------------- */
-
-.steps-box:first-child {
-    margin-top: 30px;
-    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
-    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
-}
-
-.steps-box:last-child {
-    text-align: left;
-    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
-    margin-top: 70px;
-}
-
-.app-screen {
-    width: 40%; /*40% do tamanho do box/container*/
-}
-
-.step {
-    margin-bottom: 50px;
-}
-
-/*Aumentanto apenas o espaçamento do ultimo passo, igual ao last-child*/
-.step:last-of-type {
-    margin-bottom: 80px;
-}
-
-
-/*A última coisa é formatar o tamanho dos botões... a imagem dentro do botão*/
-.btn-app img {
-    height:50px;
-    width: auto;
-    margin-right: 10px;
-}
-
-.clearfix {
-    zoom:1;
-}
-
-.clearfix:after {
-    content: '-';
-    clear: both;
-    display: block;
-    height:0;
-    visibility:hidden;
-}
-
-.section-steps {
-    background-color: #f4f4f4;
-}
-
-
-.section-features {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    background-attachment: fixed;
-}
-
 /* ----------------------------------------------- */
 /* Seção Cidades (Section Cities) */
 /* ----------------------------------------------- */
@@ -448,13 +331,6 @@ footer p {
 .city-feature {
     margin-bottom: 5px; /*dá um espaçamento vertical entre cada feature*/
 }
-
-.btn-app:link,
-.btn-app:visited {
-    border: 0px;
-}
-
-
 
 /** form **/
 
@@ -477,18 +353,9 @@ footer p {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
-
-
 
 .footer-nav {
     list-style: none;
@@ -529,13 +396,6 @@ footer p {
 .social-links li a:link,
 .social-links li a:visited {
     font-size: 50%;
-}
-
-.logo-facebook,
-.logo-googleplus,
-.logo-twitter,
-.logo-instagram {
-    transition: color 0.2s;
 }
 
 .logo-linkedin {

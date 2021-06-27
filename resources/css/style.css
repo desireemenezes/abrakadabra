@@ -182,11 +182,11 @@ footer p {
 }
 
 /* estilizando o menu + ul */
-.menu ul{
+.menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 95%;
+    height: 80%;
 }
 
 /* estilizando o menu + ul li + a */

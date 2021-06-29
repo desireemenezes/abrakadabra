@@ -22,24 +22,27 @@ $(document).ready(function(){
         });
       });   
 
-       //Efeito para virar os cards
-    
-      $(".card-grid").flip({
-        trigger: "manual"
-      });
-      
-      $(".flip").click(function() {
-        $(this)
-          .closest(".card-grid")
-          .flip(true);
-      });
-      
-      $(".unflip").click(function() {
-        $(this)
-          .closest(".card-grid")
-          .flip(false);
-      });
 });
+
+//Efeito para virar os cards
+
+$(".card-grid").flip({
+  trigger: "manual"
+});
+
+$(".flip").click(function() {
+  $(this)
+    .closest(".card-grid")
+    .flip(true);
+});
+
+$(".unflip").click(function() {
+  $(this)
+    .closest(".card-grid")
+    .flip(false);
+});
+
+
 
 
 

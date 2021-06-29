@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Para funcionar mÃ­dia queries -->
+    <!-- Para funcionar mídia queries -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ImportaÃ§Ã£o do normalize css para arrumar bugs -->
+    <!-- Importação do normalize css para arrumar bugs -->
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <!-- ImportaÃ§Ã£o do sistema de grid -->
+    <!-- Importação do sistema de grid -->
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <!-- ImportaÃ§Ã£o do nossa folha de estilo -->
-    <link rel="stylesheet" type="text/css" href="resources/css/pages.css">
-     <!-- ImportaÃ§Ã£o do nossa folha de querys -->
+    <!-- Importação do nossa folha de estilo -->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+     <!-- Importação do nossa folha de querys -->
      <link rel="stylesheet" type="text/css" href="resources/css/media.css">
-    <!-- ImportaÃ§Ã£o dos icones -->
+    <!-- Importação dos icones -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://unpkg.com/ionicons@5.0.0/dist/css/ionicons.min.css" rel="stylesheet">
-    <!-- ImportaÃ§Ã£o da fonte -->
+    <!-- Importação da fonte -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <!-- Favicon -->
@@ -23,54 +23,37 @@
     <!-- JS -->
     <script src=""></script>
     <title>Abrakadabra</title>
-</head>
+</head> 
 <body>
-    
+
     <header class="fl-between">
         <div>
-             <a href="index.html">Voltar</a>
+            <a href="index.html">Voltar</a>
         </div> 
-         <div >
-             <ul class="flex-row">
-                <li><a href="curiosity.html">Curiosidades</a></li>
-             </ul>
-         </div>
-         
-     </header>
+        <div >
+            <ul class="flex-row">
+                <li><a href="form.html">Análise com tarólogo</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <nav class="section-features">
+    <nav class="section-features-index">
         <div class="text-box center">
             <h1>ABRAKADABRA</h1><br />
         </div>
+        <div class="overlay"></div>
+        <div class="menu-curios">
+            <p>
+                Este é um jogo de tarot online onde o consultante tem direito
+                a retirar três cartas. Nas cartas o momento atual é dado, existem dicas de como agir.
+                É uma mensagem simples com interpretação pessoal do momento.
+                Na aba de Ánalise com o tarólogo você envia uma pergunta especifica e individual o tarólogo entra
+                em contato para marcarem um jogo.
+            </p>
+                
+            </ul>
+        </div>
     </nav>
-
-    
-    <section class="section-menu-forms" >
-         <form name="meu_form">
-
-            <p class="subtitle">Envie seu contato para uma anÃ¡lise especializada</p>
-            
-            <div class="body-form">
-                <label for="nome">Nome</label>
-                <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
-
-                <label for="nome">Data de nascimento</label>
-                <input type="date" id="dataid" required="required" name="data" />
-
-                <label for="fone">Fone</label>
-                <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" required="required" name="fone" />
-                
-                <label for="email">Email</label>
-                <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required="required" />
-                
-                <textarea placeholder="FaÃ§a uma pergunta especifica!" required="required"></textarea>
-                
-                <input type="submit" class="submit" value="Enviar" />
-            </div>
-
-        </form>
-    </section>
-
    
     <section class="section-testimonials" id="depoimentos">
         <div class="center flex-column">
@@ -78,9 +61,9 @@
         </div>
         <div class="center">
             <div class="flex-column">
-                <p>Este game foi desenvolvido como trabalho acÃ¢demico para cadeira de Desenvolvimento de dispositivos mÃ³veis.</p>           
+                <p>Este game foi desenvolvido como trabalho acâdemico para cadeira de Desenvolvimento de dispositivos móveis.</p>           
                 <cite>
-                    <img src="resources/img/customer.png" />DesirÃ©e Menezes
+                    <img src="resources/img/customer.png" />Desirée Menezes
                 </cite>
                 </blockquote>
             </div>

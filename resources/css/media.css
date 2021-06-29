@@ -87,6 +87,13 @@
         height: auto;
     }
 
+    .section-features-card {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar?ncias*/
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+    }
+
     .section-menu-cards {
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg);
         background-size: cover;
@@ -187,7 +194,7 @@
         background-size: cover;
         background-position: unset;
         background-attachment: fixed;
-        height: 25vh;
+        height: 45vh;
     }
 
     .section-features {
@@ -213,4 +220,9 @@
         height: auto;
         background-attachment: fixed;
     } 
+
+    .menu-curios {
+        padding: 0 10px;
+        top: unset;
+    }
 }

@@ -175,6 +175,21 @@ footer p {
     width: 100%;
     position: absolute;
     top: 390px;
+    color: #ddd;
+    padding: 0px 220px;
+}
+
+.menu-curios {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 390px;
+    color: #ddd;
+    padding: 0px 220px;
 }
 
 .menu .menu-close {
@@ -223,7 +238,7 @@ footer p {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/tarot.jpg); /*explore outras cores e transpar�ncias*/
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 70vh;
     background-attachment: fixed;
 }
 
